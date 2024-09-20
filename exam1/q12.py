@@ -1,20 +1,16 @@
-n=int(input())
-l=list(map(int,input().split()))
-s=[]
-k=[]
+n = int(input())
+l = list(map(int, input().split()))
+s = []
 for i in range(n):
-    for j in range(n):
-        for k in range(n):
-            if (l[i]+l[j]+l[k])==0:
-                s.append(l[i])
-                s.append(l[j])
-                s.append(l[k])
-                k.append(s)
-for p in range(n):
-    print(s)
-    
-                  
+    for j in range(i+1, n):
+        for k in range(j+1, n):
+            if (l[i] + l[j] + l[k]) == 0:
+                triplet = sorted([l[i], l[j], l[k]])  
+                if triplet not in s:  
+                    s.append(triplet)
+
 print(s)
+
               
 
                 
