@@ -6,7 +6,7 @@ for i in range(n):
         for k in range(j+1, n):
             if (l[i] + l[j] + l[k]) == 0:
                 triplet = sorted([l[i], l[j], l[k]])  
-                if triplet not in k:  
+                if triplet not in p:  
                     p.append(triplet)
 
 print(p)
