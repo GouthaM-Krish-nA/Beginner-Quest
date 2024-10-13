@@ -1,4 +1,4 @@
-def star(n):
+def equlatrl_star(n):
     for i in range(n):
         for j in range(i,n):
             print(' ',end=' ')
@@ -9,5 +9,13 @@ def star(n):
         for j in range(i+1):
             print('*',end=' ')
         print()
+
+
+
+
+
+
+
+
 num=int(input())
-print(star(num))
+print(equlatrl_star(num))
