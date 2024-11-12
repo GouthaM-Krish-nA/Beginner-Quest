@@ -19,5 +19,11 @@ def common_words(words):
                 c[i]=0
     result=[]
     for i,j in c.items():
-        result.extend([i]*j)
+        result.extend(i*j)
     return result
+n=int(input())
+s=[]
+for i in range(n):
+    st=input()
+    s.append(st)
+print(common_words(s))
