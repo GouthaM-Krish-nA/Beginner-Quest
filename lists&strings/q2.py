@@ -1,4 +1,5 @@
 n=int(input())
+
 l=list(map(int, input().split()))
 if n<3:
     print('Not enough scores to dtermine the top three.')
